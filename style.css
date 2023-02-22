@@ -1,102 +1,114 @@
-/* Utilisation des variables pour les couleurs */
-:root {
-    --primary-color: #0d6efd;
-    --secondary-color: #6c757d;
-}
-
-/* Style global */
+/* Style de la police */
 body {
     font-family: "Open Sans", sans-serif;
-    color: #212529;
-    background-color: #f8f9fa;
-    margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
+/* Style du logo */
+.logo {
+    font-size: 2rem;
+    color: #4CAF50;
+    font-weight: bold;
 }
 
-a:hover {
-    color: var(--secondary-color);
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-/* Style du menu de navigation */
-.navbar {
+/* Style de l'en-tête */
+header {
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-title {
-    color: #212529;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    text-decoration: none;
-    white-space: nowrap;
+/* Style des liens de la navigation */
+.navbar-nav a {
+    color: #222;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.navbar-title:hover {
-    color: #0d6efd;
-}
-
-.nav-link {
-    color: #212529 !important;
-}
-
-.nav-link:hover {
-    border: 2px solid #007bff;
-}
-
-.navbar-toggler {
+/* Style du bouton du hero */
+.hero-btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    background-color: #4CAF50;
     border: none;
-    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.navbar-toggler.active span:nth-of-type(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+.hero-btn:hover {
+    background-color: #3e8e41;
 }
 
-.navbar-toggler.active span:nth-of-type(2) {
-    opacity: 0;
+/* Style des cartes de témoignage */
+.testimonial-card {
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.navbar-toggler.active span:nth-of-type(3) {
-    transform: rotate(-45deg) translate(7px, -8px);
+.testimonial-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-/* Style des sections */
-section {
-    padding: 80px 0;
+.testimonial-card h5 {
+    margin-bottom: 0;
 }
 
-section h2 {
-    margin-bottom: 40px;
+.testimonial-card em {
+    color: #999;
 }
 
-/* Style des cartes de l'équipe */
-.card {
+/* Style du formulaire de contact */
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #ccc;
+}
+
+.form-control:focus {
+    border-color: #4CAF50;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
     border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.card-img-top {
-    object-fit: cover;
-    height: 300px;
+.btn-primary:hover {
+    background-color: #3e8e41;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #222;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 0;
 }
 
 /* Style du bouton de soumission */
 button[type="submit"] {
-    background-color: var(--primary-color);
+    background-color: #0d6efd;
     border: none;
     color: #fff;
     padding: 10px 25px;
@@ -105,11 +117,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: var(--secondary-color);
-}
-
-/* Style du pied de page */
-footer {
-    font-size: 0.9rem;
-    color: #fff;
+    background-color: #6c757d;
 }
