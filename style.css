@@ -151,8 +151,14 @@ button[type="submit"]:hover {
 }
 
 .profil {
-    position: relative;
+    position: absolute;
     color: #fff;
+    right: 1%;
+    transition: 0.3s;
+}
+
+.profil:hover {
+    color: #555555;
 }
 
 .profil i {
