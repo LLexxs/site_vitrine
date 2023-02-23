@@ -166,8 +166,8 @@ hr {
 
 .dropdown-menu {
     position: absolute;
-    top: calc(100% + 0.5rem); /* ajouter un petit décalage */
-    left: 0; /* aligner le dropdown à gauche de l'icône */
+    right: 0;
+    top: 100%;
     z-index: 1;
     display: none;
     min-width: 10rem;
