@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Magasin Bio</title>
+    <title>Le Casier du Bien Manger - Votre distributeur bio 24h/24h à Gare de Lyon</title>
     <!-- Lien vers Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-
+<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="#">Mon site vitrine</a>
+        <a class="navbar-brand" href="#">Le Casier du Bien Manger</a>
         <button
                 class="navbar-toggler"
                 type="button"
@@ -34,12 +36,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#produits">Produits</a>
                 </li>
-                    <a class="nav-link" href="#services">Services</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#retours">Retours</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
+            <a class="facebook-nav" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a> &nbsp; <a
+                class="instagram-nav" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
         </div>
     </div>
 </nav>
@@ -49,8 +54,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1>Le meilleur du bio</h1>
-                <p class="lead">Découvrez nos produits frais et de qualité</p>
+                <h1>Le Casier du Bien Manger</h1>
+                <p class="lead">Votre distributeur bio 24h/24h à Gare de Lyon</p>
             </div>
         </div>
     </div>
@@ -59,12 +64,32 @@
 <!-- Section qui présente le magasin -->
 <section class="py-5">
     <div class="container">
+        <h2 class="text-center">Qui sommes-nous ?</h2>
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="text-center">Qui sommes nous ?</h2>
-                <p class="lead text-center">Nous sommes un magasin bio qui se soucie de la qualité de ses produits et de
-                    votre santé. Nous proposons des fruits et légumes frais, des produits locaux et des produits
-                    alimentaires bio. </p>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-lg-4 text-center">
+                        <img src="assets/Logo_casier.png" alt="" class="logo">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="lead text-left">Le Casier du Bien Manger est un distributeur automatique qui
+                            propose des produits bio de qualité 24h/24h. Nous sommes situés à Gare de Lyon et nous
+                            sommes
+                            engagés pour votre santé et pour l'environnement. Notre sélection de produits comprend des
+                            fruits et
+                            légumes frais, des produits laitiers, des boissons et bien plus encore.</p>
+                        <p class="lead"> Nos réseaux : <a class="facebook" href="https://www.facebook.com/"><i
+                                class="bi bi-facebook"></i></a> <a class="instagram"
+                                                                   href="https://www.instagram.com/"><i
+                                class="bi bi-instagram"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.273302424426!2d2.3733183156749975!3d48.84405607928769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f431be6fa33%3A0x6f46b70ff2e8af50!2sGare%20de%20Lyon!5e0!3m2!1sen!2sfr!4v1645672981565!5m2!1sen!2sfr"
+                            width="100%" height="450" style="border:0;" allowfullscreen=""></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -75,41 +100,60 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="text-center">Produits en vedette</h2>
+                <h2 class="text-center">Nos Produits</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://">
-                    <div class="card-body">
-                        <h5 class="card-title">Fruits et légumes frais</h5>
-                        <p class="card-text">Découvrez notre sélection de fruits et légumes frais et de saison, cueillis
-                            à la main chez nos producteurs locaux.</p>
-                        <a href="#" class="btn btn-primary">En savoir plus</a>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-12">
+                <div id="product-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#product-carousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#product-carousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#product-carousel" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/fruitLegume.png"
+                                 class="d-block w-100 img-carousel"
+                                 alt="Produit 1">
+                            <div class="carousel-caption">
+                                <h5>Fruits et légumes frais</h5>
+                                <p>Découvrez notre sélection de fruits et légumes frais et de saison, cueillis à la main
+                                    chez nos producteurs locaux.</p>
+                                <a href="#" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/lait.png" class="d-block img-carousel"
+                                 alt="Produit 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Produits laitiers locaux</h5>
+                                <p>Découvrez notre sélection de produits laitiers bio, issus de fermes
+                                    respectueuses de l'environnement et du bien-être animal. Nos laitages sont fabriqués
+                                    avec du lait frais et de qualité, pour un goût authentique et sain.</p>
+                                <a href="#" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/boissons.png" class="d-block w-100 img-carousel"
+                                 alt="Produit 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Boissons bio</h5>
+                                <p>Dégustez nos boissons bio aux saveurs naturelles, préparées à partir d'ingrédients
+                                    soigneusement sélectionnés. Des boissons saines et respectueuses de l'environnement
+                                    pour votre bien-être quotidien.</p>
+                                <a href="#" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.example.com/images/produit-2.jpg" class="card-img-top" alt="Produit 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Produits locaux</h5>
-                        <p class="card-text">Découvrez notre sélection de produits locaux et de qualité, fabriqués par
-                            des artisans de la région.</p>
-                        <a href="#" class="btn btn-primary">En savoir plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://www.example.com/images/produit-3.jpg" class="card-img-top" alt="Produit 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Produits alimentaires bio</h5>
-                        <p class="card-text">Découvrez notre sélection de produits alimentaires bio, pour une
-                            alimentation saine et respectueuse de l'environnement.</p>
-                        <a href="#" class="btn btn-primary">En savoir plus</a>
-                    </div>
+                    <a class="carousel-control-prev" href="#product-carousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </a>
+                    <a class="carousel-control-next" href="#product-carousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -117,7 +161,7 @@
 </section>
 
 <!-- Section avec des témoignages de clients -->
-<section class="py-5">
+<section id="retours" class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -209,4 +253,5 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
 

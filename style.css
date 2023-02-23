@@ -1,3 +1,17 @@
+.carousel .carousel-indicators li {
+    background-color: white;
+}
+
+.carousel .carousel-indicators li.active {
+    background-color: #3e8e41;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    color: #222222;
+    border-color: white;
+}
+
 /* Style de la police */
 body {
     font-family: "Open Sans", sans-serif;
@@ -5,9 +19,7 @@ body {
 
 /* Style du logo */
 .logo {
-    font-size: 2rem;
-    color: #4CAF50;
-    font-weight: bold;
+    filter: drop-shadow(10px 10px 10px #a2a2a4);
 }
 
 /* Style de l'en-tête */
@@ -118,4 +130,50 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #6c757d;
+}
+
+.facebook {
+    color: black;
+    transition: 0.3s;
+}
+
+.facebook:hover {
+    color: #0d6efd;
+}
+
+.instagram {
+    color: black;
+    transition: 0.3s;
+}
+
+.instagram:hover {
+    color: #ff206f;
+}
+
+.facebook-nav {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.facebook-nav:hover {
+    color: #0d6efd;
+}
+
+.instagram-nav {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.instagram-nav:hover {
+    color: #ff206f;
+}
+
+.img-carousel {
+    height: 70vh;
+    width: 85vw;
+}
+
+.carousel-caption {
+    background-color: rgba(108,117,125,30%);
+    color: white;
 }
