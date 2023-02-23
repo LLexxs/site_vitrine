@@ -45,8 +45,19 @@
                 </li>
             </ul>
             <a class="facebook-nav" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a> &nbsp; <a
-                class="instagram-nav" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-            <a class="profil" href="#"><i class="bi bi-person-circle"></i></a>
+                class="instagram-nav" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>&nbsp;
+            <a class="profil">
+                <i class="bi bi-person-circle"></i>
+                <span class="dropdown-icon"></span>
+            </a>
+
+            <div class="dropdown-menu">
+                <a href="#">Mon compte</a>
+                <hr>
+                <a href="#">Paramètres</a>
+                <hr>
+                <a href="#">Déconnexion</a>
+            </div>
         </div>
     </div>
 </nav>
@@ -131,7 +142,7 @@
                             <img src="assets/fruitLegume.png"
                                  class="d-block w-100 img-carousel"
                                  alt="Produit 1">
-                            <div class="carousel-caption">
+                            <div class="carousel-caption b">
                                 <h5>Fruits et légumes frais</h5>
                                 <p>Découvrez notre sélection de fruits et légumes frais et de saison, cueillis à la main
                                     chez nos producteurs locaux.</p>
@@ -141,7 +152,7 @@
                         <div class="carousel-item">
                             <img src="assets/lait.png" class="d-block img-carousel"
                                  alt="Produit 2">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption b d-none d-md-block">
                                 <h5>Produits laitiers locaux</h5>
                                 <p>Découvrez notre sélection de produits laitiers bio, issus de fermes
                                     respectueuses de l'environnement et du bien-être animal. Nos laitages sont fabriqués
@@ -152,7 +163,7 @@
                         <div class="carousel-item">
                             <img src="assets/boissons.png" class="d-block w-100 img-carousel"
                                  alt="Produit 3">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption b d-none d-md-block">
                                 <h5>Boissons bio</h5>
                                 <p>Dégustez nos boissons bio aux saveurs naturelles, préparées à partir d'ingrédients
                                     soigneusement sélectionnés. Des boissons saines et respectueuses de l'environnement
@@ -163,18 +174,14 @@
                         <div class="carousel-item">
                             <img src="assets/recette.png" class="d-block w-100 img-carousel"
                                  alt="Produit 4">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Recettes variées</h5>
-                                <p>Laissez-vous surprendre par notre gamme de recettes variées bio, élaborées avec des
-                                    ingrédients frais et de qualité, issus de nos producteurs locaux. Des plats
-                                    savoureux pour des repas équilibrés et respectueux de la nature.</p>
+                            <div class="carousel-caption no-b d-none d-md-block">
                                 <a id="recettes" class="btn btn-primary">Voir les produits</a>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="assets/panierHebdo.png" class="d-block w-100 img-carousel"
                                  alt="Produit 4">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption b d-none d-md-block">
                                 <h5>Paniers hebdomadaires</h5>
                                 <p>Découvrez chaque semaine un panier de fruits et légumes bio, cultivés avec passion
                                     par nos producteurs locaux. Des aliments frais et savoureux pour une alimentation
@@ -185,12 +192,7 @@
                         <div class="carousel-item">
                             <img src="assets/panierSaison.png" class="d-block w-100 img-carousel"
                                  alt="Produit 4">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Paniers saisonniers</h5>
-                                <p>Profitez de nos paniers saisonniers remplis de fruits et légumes bio de qualité
-                                    supérieure, cultivés par nos producteurs locaux passionnés. Une manière saine et
-                                    pratique de savourer les produits de saison à leur apogée de fraîcheur et de
-                                    saveur.</p>
+                            <div class="carousel-caption no-b d-none d-md-block">
                                 <a id="panierSaison" class="btn btn-primary">Voir les produits</a>
                             </div>
                         </div>
@@ -899,6 +901,12 @@
             let div = `<div id="image" class="card mb-4 shadow-sm image-append"> <img src="assets/COMMUNCIATION%20FICHE%20PRODUIT/FICHE%20PRODUIT%20PANIER%20SAISON/PANIER%20SAISON%202/ingredients.png" alt=""></div>`;
             $('#panier-saison-2').append(div);
         }
+    });
+
+    $(document).ready(function() {
+        $('.profil').click(function() {
+            $('.dropdown-menu').toggle();
+        });
     });
 
 </script>

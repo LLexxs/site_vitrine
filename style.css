@@ -141,14 +141,69 @@ button[type="submit"]:hover {
     width: 85vw;
 }
 
-.carousel-caption {
+.carousel-caption.b {
     background-color: rgba(108, 117, 125, 30%);
     color: white;
 }
 
+.carousel-caption.no-b {
+    top: 0.75rem;
+}
+
 .profil {
-    height: 30px;
-    width: 30px;
+    position: relative;
+    color: #fff;
+}
+
+.profil i {
+    font-size: 1.5rem; /* changez la taille selon vos besoins */
+}
+
+hr {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #212529;
+    font-size: 1rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0.25rem 0.25rem 0.25rem;
+    border-color: transparent transparent #000 transparent;
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+}
+
+.profil:hover .dropdown-menu {
+    display: block;
 }
 
 .produit {
