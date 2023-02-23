@@ -20,6 +20,7 @@ body {
 /* Style du logo */
 .logo {
     filter: drop-shadow(10px 10px 10px #a2a2a4);
+    height: 400px;
 }
 
 .logo-nav {
