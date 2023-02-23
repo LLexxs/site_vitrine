@@ -22,6 +22,13 @@ body {
     filter: drop-shadow(10px 10px 10px #a2a2a4);
 }
 
+.logo-nav {
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+
 /* Style de l'en-tête */
 header {
     background-color: #fff;
